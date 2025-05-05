@@ -1,0 +1,5 @@
+@media (min-width: 1400px) {
+    .hero .row .developer {
+        font-size: 70px !important;
+    }
+}
