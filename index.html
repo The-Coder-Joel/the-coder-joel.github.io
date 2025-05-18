@@ -13,305 +13,1417 @@
     </head>
 
     <body>
+        <!-- header section -->
 
-        <!-- start page-wrapper -->
-        <div class="page-wrapper">
+        <div id="grain"></div>
 
-            <!-- start preloader -->
-            <div class="preloader">
-                <div class="vertical-centered-box">
-                    <div class="content">
-                        <div class="loader-circle"></div>
-                        <div class="loader-line-mask">
-                            <div class="loader-line"></div>
+        <!-- shape bg -->
+        <svg class="area" preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+            <path fill="#9b5de5" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+            <path fill="#f15bb5" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+            <path fill="#00bbf9" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+            <path fill="#00f5d4" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+        </svg>
+
+        <header class="header">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <!--<a href="index.html">
+                    <img src="./assets/images/logo.png" alt="logo" />
+                </a>-->
+
+                <button class="bg-transparent border-0 d-xl-none">
+                    <div class="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- navigation -->
+        <nav class="navigation" id="navigation">
+            <!--<img src="./assets/images/logo.png" class="mb-4 d-xl-none" alt="logo" />-->
+            <ul>
+                <li class="nav-link">
+                    <a href="#top" class="active"><span>01</span> <span class="text">top</span> </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#about_me"><span>02</span> <span class="text">about me</span> </a>
+                </li>
+                <!--<li class="nav-link">
+                    <a href="#services"><span>03</span> <span class="text">my services</span> </a>
+                </li>-->
+                <li class="nav-link">
+                    <a href="#attainments"><span>03</span> <span class="text">skills</span> </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#fun_facts"><span>04</span> <span class="text">facts</span> </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#experience"><span>05</span> <span class="text">experiences</span> </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#projects"><span>06</span> <span class="text">projects</span> </a>
+                </li>
+                <!--<li class="nav-link">
+                    <a href="#how_i_work"><span>08</span> <span class="text">how i work</span> </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#blogs"><span>09</span> <span class="text">Blogs</span> </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#testimonials"><span>10</span> <span class="text">testimonials</span> </a>
+                </li>-->
+                <li class="nav-link">
+                    <a href="#contact"><span>07</span> <span class="text">contact</span> </a>
+                </li>
+            </ul>
+            <div class="contact">
+                <a href="mailto:contact.joelbenny@gmail.com" target="_blank">contact.joelbenny@gmail.com</a>
+                <a href="tel:+91 9207784863" target="_blank">+91 9207784863</a>
+            </div>
+        </nav>
+        <div class="nav-overlay d-xl-none"></div>
+
+        <!-- main content -->
+        <main class="container-fluid">
+            <div class="row gx-xxl-6">
+                <div class="col col-xl-9" data-bs-spy="scroll" data-bs-target="#navigation">
+
+                    <!-- hero -->
+                    <section id="top" class="hero">
+                        <div class="row gx-4 align-items-center">
+                            <div class="col-12 col-md-6 col-xl-6 hero-content">
+                                <div>
+                                    <h4 class="text-uppercase freelancer">HI, I'M A WEB DEVELOPER</h4>
+                                    <h1 class="text-uppercase overflow-hidden developer" id="typewriter"></h1>
+                                    <p class="description">Based in Kochi, Kerala.</p>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <a href="#projects" class="btn work-btn text-capitalize btn-secondary">view my work</a>
+                                    <a href="#contact" class="btn contact-btn text-capitalize btn-outline-secondary">contact me</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 offset-md-1 offset-xxl-2 col-xl-4">
+                                <div class="img-wrapper">
+                                    <div class="waves-top">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <img class="img-fluid rounded-circle hero-img" src="./assets/images/hero.png" alt="" />
+                                    <div class="waves-bottom">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="#about_me" class="d-flex gap-4 align-items-center next-chapter mt-5">
+                                    <span class="page">01/07</span>
+                                    <span class="next">Next Chapter</span>
+                                    <span class="icon"><i class="ph ph-arrow-elbow-right-down"></i></span>
+                                </a>
+                            </div>
                         </div>
-                        <img src="assets/images/preloader.gif" alt="">
+                    </section>
+
+                    <!-- about me -->
+                    <section id="about_me" class="about section">
+                        <span class="section-title-overlay-text">About me</span>
+                        <div class="section-title text-capitalize">
+                            <h4>Some Word About me</h4>
+                            <h2>know me more</h2>
+                        </div>
+                        <div class="row mb-4 mb-lg-5 align-items-center">
+                            <div class="col-lg-7 col-xl-8 about-desc">
+                                <h2>I'm Joel Benny, a Web Developer</h2>
+                                <p class="desc"> A passionate and results-driven Web Developer with over 2.5 years of professional experience in building responsive, user-friendly, and efficient websites. I specialize in PHP, WordPress, Laravel, React, and front-end technologies like HTML, CSS, JavaScript, jQuery, and AJAX.</p>
+                                <p class="desc">With a strong eye for design and a love for clean, modern interfaces, I craft websites that are not just visually appealing but also provide meaningful value to users. Whether it’s a custom plugin for WordPress or a dynamic single-page application in PHP, I bring both creativity and functionality to every project.</p>
+                                <p class="desc">Over the years, I’ve had the opportunity to work with a wide range of clients, helping them achieve outstanding digital results. My focus is always on delivering high-quality work on time and within budget, while ensuring the final product exceeds client expectations.</p>
+                                <p class="desc">Let's build something great together.</p>
+                                <!--<div class="row contact">
+                                    <div class="col-sm-4">
+                                        <p>Email:</p>
+                                        <a href="mailto:contact.joelbenny@gmail.com">contact.joelbenny@gmail.com</a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p>Date of Birth:</p>
+                                        <span>16 September, 2000</span>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p>Contact No.:</p>
+                                        <a href="tel:+919207784863">+91 9207784863</a>
+                                    </div>
+                                </div>-->
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="experience-card">
+                                    <div class="card-inner"></div>
+                                    <div>
+                                        <div class="numbers">
+                                            <span class="number-outline-one">2.5</span>
+                                            <span class="number-outline-two">2.5</span>
+                                            <span class="number-main">2.5</span>
+                                        </div>
+                                        <p>Years of Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="#attainments" class="d-flex gap-4 align-items-center next-chapter">
+                                <span class="page">02/07</span>
+                                <span class="next">Next Chapter</span>
+                                <span class="icon"><i class="ph ph-arrow-elbow-right-down"></i></span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- services -->
+                    <!--<section id="services" class="services section position-relative">
+                        <span class="section-title-overlay-text">my services</span>
+                        <div class="section-title text-capitalize">
+                            <h4>How I can help your next project</h4>
+                            <h2>What I Do?</h2>
+                        </div>
+                        <div dir="ltr" class="swiper service-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide overflow-visible p-3">
+                                    <div class="service-card">
+                                        <div class="card-inner"></div>
+                                        <div class="content">
+                                            <div class="number-circle">
+                                                <div class="waves-top-sm">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <h2>01</h2>
+                                                <div class="waves-bottom-sm">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <h4>UI/UX Design</h4>
+                                            <ul class="service-list">
+                                                <li><i class="ph ph-caret-double-right"></i> Landing Pages</li>
+                                                <li><i class="ph ph-caret-double-right"></i> User Flow</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Wireframing</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Prototyping</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Mobile App Design</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide overflow-visible p-3">
+                                    <div class="service-card">
+                                        <div class="card-inner"></div>
+                                        <div class="content">
+                                            <div class="number-circle">
+                                                <div class="waves-top-sm">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <h2>02</h2>
+                                                <div class="waves-bottom-sm">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <h4>Development</h4>
+                                            <ul class="service-list">
+                                                <li><i class="ph ph-caret-double-right"></i> Front-End Development</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Back-End Development</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Full-Stack Development</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Database Management</li>
+                                                <li><i class="ph ph-caret-double-right"></i> API Integration Design</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide overflow-visible p-3">
+                                    <div class="service-card">
+                                        <div class="card-inner"></div>
+                                        <div class="content">
+                                            <div class="number-circle">
+                                                <div class="waves-top-sm">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <h2>03</h2>
+                                                <div class="waves-bottom-sm">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <h4>Illustration</h4>
+                                            <ul class="service-list">
+                                                <li><i class="ph ph-caret-double-right"></i> Character Design</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Icon Set</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Illustration Guide</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Illustration Set</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Motion Graphic Design</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide overflow-visible p-3">
+                                    <div class="service-card">
+                                        <div class="card-inner"></div>
+                                        <div class="content">
+                                            <div class="number-circle">
+                                                <div class="waves-top-sm">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <h2>04</h2>
+                                                <div class="waves-bottom-sm">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <h4>App Development</h4>
+                                            <ul class="service-list">
+                                                <li><i class="ph ph-caret-double-right"></i> Android App</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Ios App</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Wireframing</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Prototyping</li>
+                                                <li><i class="ph ph-caret-double-right"></i> Mobile App Design</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="col-12">
+                            <a href="#attainments" class="d-flex gap-4 align-items-center next-chapter">
+                                <span class="page">03/11</span>
+                                <span class="next">Next Chapter</span>
+                                <i class="ph ph-arrow-elbow-right-down"></i>
+                            </a>
+                        </div>
+                    </section>-->
+
+                    <!-- attainments -->
+                    <section id="attainments" class="attainments section position-relative">
+                        <span class="section-title-overlay-text">ATTAINMENTS</span>
+                        <div class="row pb-120 design-row">
+                            <div class="col-lg-4">
+                                <div class="section-title-sm">
+                                    <div class="top">
+                                        <h2>Skills</h2>
+                                        <!--<span>Highlight My Expertise in:</span>-->
+                                    </div>
+                                    <span class="serial">01.-</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="d-flex flex-column align-items-center mb-4">
+                                            <div class="design-chart mb-4"></div>
+                                            <button class="btn btn-outline-secondary px-5">Front-End Development</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="d-flex flex-column align-items-center mb-4">
+                                            <div class="branding-chart mb-4"></div>
+                                            <button class="btn btn-outline-secondary px-5">Back-End Development</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="d-flex flex-column align-items-center mb-4">
+                                            <div class="ecommerce-chart mb-4"></div>
+                                            <button class="btn btn-outline-secondary px-5">Database Management</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-120 developer-row">
+                            <div class="col-md-5 col-lg-4 offset-sm-1 offset-lg-2">
+                                <div class="section-title-sm">
+                                    <div class="top">
+                                        <h2>Developer Skills</h2>
+                                        <!--<span>Highlight My Expertise in:</span>-->
+                                    </div>
+                                    <span class="serial">02.-</span>
+                                </div>
+                            </div>
+                        <div class="col-md-6">
+                            <div class="d-flex flex-column gap-3">
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>PHP</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>WordPress</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>WooCommerce</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>MySQL</span>
+                                        <span>94%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>JavaScript</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>JQuery</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>AJAX</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>Laravel</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>React</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>Bootstrap</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>Version Control</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>API Integration</span>
+                                        <span>87%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar ninety" data-width="87%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row pb-120 language-row">
+                        <div class="col-lg-4">
+                            <div class="section-title-sm">
+                                <div class="top">
+                                    <h2>Language Skills</h2>
+                                    <!--<span>Highlight My Expertise in:</span>-->
+                                </div>
+                                <span class="serial">03.-</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="d-flex flex-column align-items-center mb-4">
+                                        <div class="english-chart mb-4"></div>
+                                        <button class="btn btn-outline-secondary px-5">English</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="d-flex flex-column align-items-center mb-4">
+                                        <div class="malayalam-chart mb-4"></div>
+                                        <button class="btn btn-outline-secondary px-5">Malayalam</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="d-flex flex-column align-items-center mb-4">
+                                        <div class="hindi-chart mb-4"></div>
+                                        <button class="btn btn-outline-secondary px-5">Hindi</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="#fun_facts" class="d-flex gap-4 align-items-center next-chapter">
+                                <span class="page">03/07</span>
+                                <span class="next">Next Chapter</span>
+                                <span class="icon"><i class="ph ph-arrow-elbow-right-down"></i></span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- fun facts -->
+                    <section id="fun_facts" class="fun_facts section">
+                        <span class="section-title-overlay-text">my facts</span>
+                        <div class="section-title text-capitalize">
+                            <h4>Some interesting facts about me</h4>
+                            <h2>Fun Facts</h2>
+                        </div>
+                        <div class="row pb-60">
+                            <div class="col-sm-6 col-md-4 col-xl-3">
+                                <div class="fun-fact">
+                                    <div class="numbers">
+                                        <span class="number-outline-one">97+</span>
+                                        <span class="number-outline-two">97+</span>
+                                        <span class="number-main">97+</span>
+                                    </div>
+                                    <p>Finished Projects</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 offset-md-1 col-xl-3">
+                                <div class="fun-fact">
+                                    <div class="numbers">
+                                        <span class="number-outline-one">100%</span>
+                                        <span class="number-outline-two">100%</span>
+                                        <span class="number-main">100%</span>
+                                    </div>
+                                    <p>Customer Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-60">
+                            <div class="col-sm-6 col-md-4 offset-md-2 offset-xl-5 col-xl-3">
+                                <div class="fun-fact">
+                                    <div class="numbers">
+                                        <span class="number-outline-one">1000+</span>
+                                        <span class="number-outline-two">1000+</span>
+                                        <span class="number-main">1000+</span>
+                                    </div>
+                                    <p>Hours of Coding</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 offset-md-1 col-xl-3">
+                                <div class="fun-fact">
+                                    <div class="numbers">
+                                        <span class="number-outline-one">50+</span>
+                                        <span class="number-outline-two">50+</span>
+                                        <span class="number-main">50+</span>
+                                    </div>
+                                    <p>Happy Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="#experience" class="d-flex gap-4 align-items-center next-chapter">
+                                <span class="page">04/07</span>
+                                <span class="next">Next Chapter</span>
+                                <span class="icon"><i class="ph ph-arrow-elbow-right-down"></i></span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- experience -->
+                    <section id="experience" class="experience section position-relative">
+                        <span class="section-title-overlay-text">EXPERIENCES</span>
+                        <div class="section-title text-capitalize">
+                            <!--<h4>Highlight My key Experiences</h4>-->
+                            <h2>My Experience</h2>
+                        </div>
+                        <div class="row pb-60">
+                            <div class="col-lg-10 col-xl-8">
+                                <div class="experience-wrapper d-flex flex-column">
+                                    <div class="experience-item">
+                                        <h5>(2022 - Present)</h5>
+                                        <h3>PHP Developer at Hatchberries Technologies:</h3>
+                                        <p>As a PHP Developer at Hatchberries Technologies, I have been actively involved in the end-to-end development of dynamic and responsive web applications. My role spans full-stack development, from front-end design to back-end logic, using a wide range of technologies including PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap.</p>
+                                        <br>
+                                        <p>I have successfully contributed to multiple client projects by:</p>
+                                        <ul>
+                                            <li>Developing custom WordPress themes and plugins, tailored to meet specific business needs.</li>
+                                            <li>Building and customizing WooCommerce stores, implementing secure payment gateways, product filtering systems, and performance optimization.</li>
+                                            <li>Creating interactive UI components using jQuery and AJAX for a seamless user experience.</li>
+                                            <li>Implementing PHPMailer for contact forms, transactional email automation, and newsletter systems.</li>
+                                            <li>Collaborating closely with UI/UX teams to turn design mockups into fully functional web interfaces.</li>
+                                            <li>Maintaining code quality and performance with version control (Git) and continuous testing.</li>
+                                            <li>Integrating third-party APIs and HDFC Smart Gateway using secure JWT-based methods.</li>
+                                            <li>Providing post-launch support, performance monitoring, and feature enhancements.</li>
+                                        </ul>
+                                        <br>
+                                        <p>This role has allowed me to refine my skills in Laravel, WordPress, and modern front-end development, while gaining strong experience in managing project timelines, client communication, and delivering scalable, user-centric web solutions.</p>
+                                    </div>
+                                </div>
+
+                                <a href="assets/resume.pdf" class="download-cv position-relative" download>
+                                    <div class="waves-top-md">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <img src="./assets/images/arrow.png" alt="" />
+                                    <div class="waves-bottom-md">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <a href="#projects" class="d-flex gap-4 align-items-center next-chapter">
+                                <span class="page">05/07</span>
+                                <span class="next">Next Chapter</span>
+                                <span class="icon"><i class="ph ph-arrow-elbow-right-down"></i></span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- projects -->
+                    <section id="projects" class="projects section position-relative">
+                        <span class="section-title-overlay-text">projects</span>
+                        <div class="section-title text-capitalize">
+                            <h4>Some of my most recent projects</h4>
+                            <h2>My Featured Projects</h2>
+                        </div>
+                        <div class="row pb-60 project-list g-4">
+                            <div class="col-sm-6 col-lg-4">
+                                <!--<div class="single-project" data-bs-toggle="modal" data-bs-target="#project-details" data-title="Asadi" data-img="asadi-mockup">-->
+                                <a href="https://www.asadi.edu.in/" target="_blank">
+                                    <div class="single-project">
+                                        <div class="project-card">
+                                            <div class="card-inner"></div>
+                                            <img src="./assets/images/projects/asadi-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                            <div class="card-arrow">
+                                                <div class="arrow-inner">
+                                                    <i class="ph ph-arrow-up-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-info">
+                                            <h2>Asadi</h2>
+                                            <p>Fully Dynamic Website - PHP</p>
+                                            <div class="tags d-flex align-items-center gap-1">
+                                                <span>frontend</span> - <span>backend</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <a href="https://www.olivebuilder.com/" target="_blank">
+                                    <div class="single-project">
+                                        <div class="project-card">
+                                            <div class="card-inner"></div>
+                                            <img src="./assets/images/projects/olive-builders-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                            <div class="card-arrow">
+                                                <div class="arrow-inner">
+                                                    <i class="ph ph-arrow-up-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-info">
+                                            <h2>Olive Builders</h2>
+                                            <p>Fully Dynamic Website - PHP</p>
+                                            <div class="tags d-flex align-items-center gap-1">
+                                                <span>frontend</span> - <span>backend</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <a href="https://www.prc.pushpagiri.in/" target="_blank">
+                                    <div class="single-project">
+                                        <div class="project-card">
+                                            <div class="card-inner"></div>
+                                            <img src="./assets/images/projects/prc-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                            <div class="card-arrow">
+                                                <div class="arrow-inner">
+                                                    <i class="ph ph-arrow-up-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-info">
+                                            <h2>PRC</h2>
+                                            <p>Fully Dynamic Website - PHP</p>
+                                            <div class="tags d-flex align-items-center gap-1">
+                                                <span>frontend</span> - <span>backend</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="single-project">
+                                    <div class="project-card">
+                                        <div class="card-inner"></div>
+                                        <img src="./assets/images/projects/chiles-tacos-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                        <div class="card-arrow">
+                                            <div class="arrow-inner">
+                                                <i class="ph ph-arrow-up-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <h2>Chiles Tacos</h2>
+                                        <p>Fully Dynamic Website - PHP</p>
+                                        <div class="tags d-flex align-items-center gap-1">
+                                            <span>frontend</span> - <span>backend</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <a href="https://www.wegomap.com/" target="_blank">
+                                    <div class="single-project">
+                                        <div class="project-card">
+                                            <div class="card-inner"></div>
+                                            <img src="./assets/images/projects/wegomap-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                            <div class="card-arrow">
+                                                <div class="arrow-inner">
+                                                    <i class="ph ph-arrow-up-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-info">
+                                            <h2>Wegomap</h2>
+                                            <p>Fully Dynamic Website - PHP</p>
+                                            <div class="tags d-flex align-items-center gap-1">
+                                                <span>frontend</span> - <span>backend</span> - <span>pms</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="single-project">
+                                    <div class="project-card">
+                                        <div class="card-inner"></div>
+                                        <img src="./assets/images/projects/educere-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                        <div class="card-arrow">
+                                            <div class="arrow-inner">
+                                                <i class="ph ph-arrow-up-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <h2>Educere</h2>
+                                        <p>Fully Dynamic Website - PHP</p>
+                                        <div class="tags d-flex align-items-center gap-1">
+                                            <span>backend</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <a href="https://yaamidesigns.com/" target="_blank">
+                                    <div class="single-project">
+                                        <div class="project-card">
+                                            <div class="card-inner"></div>
+                                            <img src="./assets/images/projects/yaami-designs-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                            <div class="card-arrow">
+                                                <div class="arrow-inner">
+                                                    <i class="ph ph-arrow-up-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-info">
+                                            <h2>Yaami Designs</h2>
+                                            <p>E-Commerce - Wordpress</p>
+                                            <div class="tags d-flex align-items-center gap-1">
+                                                <span>wordpress</span> - <span>woocommerce</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <a href="https://maldivespackages.net/" target="_blank">
+                                    <div class="single-project">
+                                        <div class="project-card">
+                                            <div class="card-inner"></div>
+                                            <img src="./assets/images/projects/maldives-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                            <div class="card-arrow">
+                                                <div class="arrow-inner">
+                                                    <i class="ph ph-arrow-up-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-info">
+                                            <h2>Maldives Packages</h2>
+                                            <p>Tour Package Listing</p>
+                                            <div class="tags d-flex align-items-center gap-1">
+                                                <span>wordpress</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <a href="https://chaithramonline.com/" target="_blank">
+                                    <div class="single-project">
+                                        <div class="project-card">
+                                            <div class="card-inner"></div>
+                                            <img src="./assets/images/projects/chaithram-mockup.jpg" class="img-fluid w-100 card-img h-100" alt="" />
+                                            <div class="card-arrow">
+                                                <div class="arrow-inner">
+                                                    <i class="ph ph-arrow-up-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-info">
+                                            <h2>Chaithram</h2>
+                                            <p>E-Commerce - Wordpress</p>
+                                            <div class="tags d-flex align-items-center gap-1">
+                                                <span>wordpress</span> - <span>woocommerce</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="#contact" class="d-flex gap-4 align-items-center next-chapter">
+                                <span class="page">06/07</span>
+                                <span class="next">Next Chapter</span>
+                                <i class="ph ph-arrow-elbow-right-down"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- how i work -->
+                    <!--<section id="how_i_work" class="how-i-work section position-relative">
+                        <span class="section-title-overlay-text">How i Work</span>
+                        <div class="section-title text-capitalize">
+                        <h4>How i Work</h4>
+                        <h2>My Working Process</h2>
+                        </div>
+                        <div class="row pb-60 px-4 process-list justify-content-center">
+                        <div class="process col-6">
+                            <span class="circle position-absolute w-100 h-100"></span>
+                            <div>
+                            <p>01.</p>
+                            <p>idea</p>
+                            </div>
+                        </div>
+                        <div class="process col-6">
+                            <span class="circle-even position-absolute w-100 h-100"></span>
+                            <div>
+                            <p>02.</p>
+                            <p>sketch</p>
+                            </div>
+                        </div>
+                        <div class="process col-6">
+                            <span class="circle position-absolute w-100 h-100"></span>
+                            <div>
+                            <p>03.</p>
+                            <p>design</p>
+                            </div>
+                        </div>
+                        <div class="process col-6">
+                            <span class="circle-even position-absolute w-100 h-100"></span>
+                            <div>
+                            <p>04.</p>
+                            <p>develop</p>
+                            </div>
+                        </div>
+                        <div class="process col-6">
+                            <span class="circle position-absolute w-100 h-100"></span>
+                            <div>
+                            <p>05.</p>
+                            <p>text</p>
+                            </div>
+                        </div>
+                        <div class="process col-6">
+                            <span class="circle-even position-absolute w-100 h-100"></span>
+                            <div>
+                            <p>06.</p>
+                            <p>launch</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="more-info d-flex flex-wrap align-items-center gap-5 gap-md-3">
+                        <p>Need More info? Please Get in touch</p>
+                        <span class="line"></span>
+                        <a href="#contact" class="arrow-down position-relative">
+                            <div class="waves-top-md">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </div>
+                            <img src="./assets/images/arrow.png" alt="" />
+                            <div class="waves-bottom-md">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-12">
+                        <a href="#testimonials" class="d-flex gap-4 align-items-center next-chapter">
+                            <span class="page">08/11</span>
+                            <span class="next">Next Chapter</span>
+                            <i class="ph ph-arrow-elbow-right-down"></i>
+                        </a>
+                        </div>
+                    </section>-->
+
+                    <!-- blogs -->
+                    <!--<section id="blogs" class="section blogs position-relative">
+                        <span class="section-title-overlay-text">My Blogs</span>
+                        <div class="section-title text-capitalize">
+                        <h4>Explore My Blog</h4>
+                        <h2>Latest Articles</h2>
+                        </div>
+                        <div class="pb-60 d-flex flex-column gap-4">
+                        <a href="blog-details.html" class="blog-card">
+                            <div class="rounded-4 overflow-hidden img-wrapper">
+                            <img src="./assets/images/blog-1.png" class="img-fluid" alt="" />
+                            </div>
+                            <div>
+                            <h4 class="fw-medium mb-3">Lessons Learned from 07 Years in the Industry</h4>
+                            <div class="d-flex align-items-center gap-4 flex-wrap mb-3">
+                                <div class="d-flex gap-2 align-items-center fs-5">
+                                <i class="ph ph-calendar"></i>
+                                <p>April 14, 2024</p>
+                                </div>
+                                --
+                                <div class="d-flex gap-2 align-items-center fs-5">
+                                <i class="ph ph-clock"></i>
+                                <p>3 Min Read</p>
+                                </div>
+                            </div>
+                            <p class="details">In the realm of technology blogging, captivating your audience goes beyond just the written word. Incorporating and provide a dynamic...</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center gap-2">
+                                <span class="fs-3">•</span>
+                                <p>Code</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                <span class="fs-3">•</span>
+                                <p>Guides</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                <span class="fs-3">•</span>
+                                <p>Tech</p>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                        <a href="blog-details.html" class="blog-card">
+                            <div class="rounded-4 overflow-hidden img-wrapper">
+                            <img src="./assets/images/blog-2.png" class="img-fluid" alt="" />
+                            </div>
+                            <div>
+                            <h4 class="fw-medium mb-3">Balancing Creativity and Usability in Web Design</h4>
+                            <div class="d-flex align-items-center gap-4 flex-wrap mb-3">
+                                <div class="d-flex gap-2 align-items-center fs-5">
+                                <i class="ph ph-calendar"></i>
+                                <p>April 14, 2024</p>
+                                </div>
+                                --
+                                <div class="d-flex gap-2 align-items-center fs-5">
+                                <i class="ph ph-clock"></i>
+                                <p>3 Min Read</p>
+                                </div>
+                            </div>
+                            <p class="details">In the realm of technology blogging, captivating your audience goes beyond just the written word. Incorporating and provide a dynamic...</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center gap-2">
+                                <span class="fs-3">•</span>
+                                <p>Code</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                <span class="fs-3">•</span>
+                                <p>Guides</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                <span class="fs-3">•</span>
+                                <p>Tech</p>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="more-info d-flex flex-wrap align-items-center gap-5 gap-md-3">
+                        <a href="blogs.html" class="fs-5 fw-medium">View All Articles</a>
+                        <span class="line"></span>
+                        <a href="blogs.html" class="arrow-down position-relative">
+                            <div class="waves-top-md">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </div>
+                            <svg width="45" height="54" viewBox="0 0 45 54" class="rotate-90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M44 31.449L22.5 52.949L1 31.449L8.98204 23.3382L16.8353 31.449V0.550781H28.1647V31.449L36.018 23.3382L44 31.449Z" stroke="currentColor" />
+                            </svg>
+                            <div class="waves-bottom-md">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-12">
+                        <a href="#testimonials" class="d-flex gap-4 align-items-center next-chapter">
+                            <span class="page">09/11</span>
+                            <span class="next">Next Chapter</span>
+                            <i class="ph ph-arrow-elbow-right-down"></i>
+                        </a>
+                        </div>
+                    </section>-->
+
+                    <!-- testimonials -->
+                    <!--<section id="testimonials" class="testimonials section position-relative">
+                        <span class="section-title-overlay-text">TESTIMONIALS</span>
+                        <div class="section-title text-capitalize">
+                        <h4>My Clients and Testimonials</h4>
+                        <h2>My Clients Reviews</h2>
+                        </div>
+                        <div dir="ltr" class="row pb-120 testimonial px-3">
+                        <div class="swiper testimonial-swiper pb-60">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                <div class="img-wrapper">
+                                    <div class="inner">
+                                    <div class="waves-top-sm">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <img src="./assets/images/hero.png" width="82" height="82" alt="" />
+                                    <div class="waves-bottom-sm">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3>James Smith</h3>
+                                    <div class="d-flex align-items-center gap-2 mb-4">
+                                    <p>website owner</p>
+                                    <p>--</p>
+                                    <span>www.websites.com</span>
+                                    </div>
+                                    <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                <div class="img-wrapper">
+                                    <div class="inner">
+                                    <div class="waves-top-sm">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <img src="./assets/images/hero.png" width="82" height="82" alt="" />
+                                    <div class="waves-bottom-sm">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3>James Smith</h3>
+                                    <div class="d-flex align-items-center gap-2 mb-4">
+                                    <p>website owner</p>
+                                    <p>--</p>
+                                    <span>www.websites.com</span>
+                                    </div>
+                                    <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                <div class="img-wrapper">
+                                    <div class="inner">
+                                    <div class="waves-top-sm">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <img src="./assets/images/hero.png" width="82" height="82" alt="" />
+                                    <div class="waves-bottom-sm">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3>James Smith</h3>
+                                    <div class="d-flex align-items-center gap-2 mb-4">
+                                    <p>website owner</p>
+                                    <p>--</p>
+                                    <span>www.websites.com</span>
+                                    </div>
+                                    <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                <div class="img-wrapper">
+                                    <div class="inner">
+                                    <div class="waves-top-sm">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <img src="./assets/images/hero.png" width="82" height="82" alt="" />
+                                    <div class="waves-bottom-sm">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3>James Smith</h3>
+                                    <div class="d-flex align-items-center gap-2 mb-4">
+                                    <p>website owner</p>
+                                    <p>--</p>
+                                    <span>www.websites.com</span>
+                                    </div>
+                                    <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between gap-4 align-items-center">
+                            <div class="s-scrollbar flex-grow-1"></div>
+                            <div class="d-flex gap-3">
+                            <button class="testi-prev"><i class="ph ph-arrow-left"></i></button>
+                            <button class="testi-next"><i class="ph ph-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-12">
+                        <a href="#contact" class="d-flex gap-4 align-items-center next-chapter">
+                            <span class="page">10/11</span>
+                            <span class="next">Next Chapter</span>
+                            <i class="ph ph-arrow-elbow-right-down"></i>
+                        </a>
+                        </div>
+                    </section>-->
+
+                    <!-- contact -->
+                    <section id="contact" class="contact section position-relative">
+                        <span class="section-title-overlay-text">contact</span>
+                        <div class="section-title text-capitalize">
+                            <h4>Let's get in touch</h4>
+                            <h2>Contact me</h2>
+                        </div>
+                        <div class="row pb-120 contact-items">
+                            <div class="row g-4">
+                                <div class="col-sm-6 col-xl-4 col-xxl-4">
+                                    <div class="contact-item">
+                                        <div class="icon-box">
+                                            <i class="ph ph-phone-call"></i>
+                                        </div>
+                                        <p><a href="tel:+91 9207784863" target="_blank">+91 9207784863</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xl-4 col-xxl-4">
+                                    <div class="contact-item">
+                                        <div class="icon-box">
+                                            <i class="ph ph-envelope-open"></i>
+                                        </div>
+                                        <p><a href="mailto:contact.joelbenny@gmail.com" target="_blank">contact.joelbenny@gmail.com</a></p>
+                                    </div>
+                                </div>
+                                <!--<div class="col-sm-6 col-xl-4 col-xxl-4">
+                                    <div class="contact-item">
+                                        <div class="icon-box">
+                                            <i class="ph ph-map-pin"></i>
+                                        </div>
+                                        <p>Athirampuzha, Kottayam, Kerala</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xl-4 col-xxl-4 d-flex align-items-center">
+                                    <div class="d-flex gap-3 social-icons">
+                                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                        <!--<form id="contact-form" class="contact-form">
+                            <h4>Leave a Message</h4>
+                            <div class="row g-4 g-xl-5">
+                                <div class="col-sm-6">
+                                <label for="name">Name</label>
+                                <input type="text" id="user_name" name="user_name" placeholder="Your name" required />
+                                </div>
+                                <div class="col-sm-6">
+                                <label for="email">Email</label>
+                                <input type="email" id="user_email" name="user_email" placeholder="Your e-mail" required />
+                                </div>
+                                <div class="col-12">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                <button type="submit" id="submit-btn" class="submit-btn position-relative">
+                                    <div class="waves-top-md">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    </div>
+                                    submit
+                                    <div class="waves-bottom-md">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    </div>
+                                </button>
+                                </div>
+                            </div>
+                        </form>-->
+                        <div class="col mt-5 pt-5 next-chapter">
+                            <span class="page">07/07</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- color switcher -->
+        <div class="color-switcher" style="display: none;">
+            <button class="color-switcher-btn">
+                <i class="ph ph-gear-six"></i>
+            </button>
+            <div class="pallets d-flex flex-column align-items-center gap-4 justify-content-center">
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-3">
+                        <button style="background-color: #ffdb67" class="color-btn" data-color="255, 219, 103"></button>
+                        <button style="background-color: #ff91fb" class="color-btn" data-color="255, 145, 251"></button>
+                        <button style="background-color: #fdbb2e" class="color-btn" data-color="253, 187, 46"></button>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <button style="background-color: #eee8aa" class="color-btn" data-color="238, 232, 170"></button>
+                        <button style="background-color: #00ffff" class="color-btn" data-color="0, 255, 255"></button>
+                        <button style="background-color: #00fe9c" class="color-btn" data-color="0, 254, 156"></button>
+                    </div>
+                </div>
+                <div class="d-flex gap-3 justify-content-between">
+                    <button class="px-3 ltr py-2 border-0">LTR</button>
+                    <button class="px-3 rtl py-2 border-0">RTL</button>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <label for="grained"> Grained BG </label>
+                    <input type="checkbox" id="grained" class="grained-checkbox" />
+                </div>
+            </div>
+        </div>
+
+        <!-- project modal -->
+        <div class="modal fade" id="project-details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close fs-3" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="ph ph-x"></i>
+                        </button>
+                        <img src="assets/images/projects/asadi-mockup.jpg" class="w-100 img-fluid project-details-img rounded-3 mb-3 mb-xl-4" alt="" />
+                        <div class="row gx-4 gy-4 gy-md-0">
+                            <div class="col-md-7 col-xl-9">
+                                <h1 class="mb-3 fw-semibold" id="project-title">EduMaster</h1>
+                                <p class="mb-4 mb-xl-5">Designed and developed a fully functional e-commerce platform for a startup specializing in handcrafted goods. The project involved creating a visually appealing user interface, and ensuring an overall smooth shopping experience.</p>
+                                <h2 class="mb-3 fw-semibold">Project Goals</h2>
+                                <p class="mb-4">Developed a website for a non-profit organization aimed at raising awareness and funds for environmental conservation. The site features educational content, event management, and donation capabilities.</p>
+                                <ul class="list-plus">
+                                    <li>Create a visually cohesive blog that aligns with the influencer's personal brand.</li>
+                                    <li>Implement a secure and reliable payment gateway.</li>
+                                    <li>Ensure the website is responsive and performs well across all devices.</li>
+                                    <li>Optimize the site for search engines to increase organic traffic.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5 col-xl-3">
+                                <div class="right-bar">
+                                    <div>
+                                        <p class="mb-1">Client</p>
+                                        <h6 class="fw-semibold">Mashroom</h6>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1">Category</p>
+                                        <h6 class="fw-semibold">User Experience</h6>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1">Start Date</p>
+                                        <h6 class="fw-semibold">02/08/2023</h6>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1">End Date</p>
+                                        <h6 class="fw-semibold">01/03/2024</h6>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1">Tools</p>
+                                        <h6 class="fw-semibold">Adobe Xd, Figma</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="fw-medium mb-2">Challenges and Solutions</h3>
+                            <p class="mb-4">
+                                One of the main challenges was optimizing the website's load time while maintaining high-quality images of the products. To address this, I implemented lazy loading for images and used optimized image formats, resulting in a faster, smoother browsing experience without compromising
+                            visual quality.
+                            </p>
+                            <div class="row gx-4 gy-4 gy-md-0 mb-4 mb-xl-5 pb-3">
+                                <div class="col-md-6">
+                                    <img src="./assets/images/project-details-1.png" class="w-100 img-fluid rounded-3" alt="" />
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="./assets/images/project-details-2.png" class="w-100 img-fluid rounded-3" alt="" />
+                                </div>
+                            </div>
+                            <h4 class="mb-3">Key Features:</h4>
+                            <p class="mb-4">Developed a website for a non-profit organization aimed at raising awareness and funds for environmental conservation. The site features educational content, event management, and donation capabilities.</p>
+                            <ul class="bullet mb-4 pb-3 mb-xl-5">
+                                <li>Custom Blog Layouts: Designed multiple blog layouts to cater to different content types, including image-heavy posts and long-form articles.</li>
+                                <li>Content Management System: Integrated WordPress for easy content updates and management, allowing the influencer to focus on creating content without technical hurdles.</li>
+                                <li>Responsive Design: Ensured the blog is fully responsive, providing a seamless experience on smartphones, tablets, and desktops.</li>
+                                <li>SEO and Social Media Integration: Implemented SEO best practices and integrated social media sharing buttons, making it easy for readers to share posts across platforms.</li>
+                                <li>Newsletter Signup: Added a newsletter signup form to help the influencer grow their email list and maintain engagement with followers.</li>
+                            </ul>
+                            <div class="outcome">
+                                <h5 class="mb-3">Outcome:</h5>
+                                <p>The blog quickly gained traction, attracting a growing audience and enhancing the influencer’s online presence. The user-friendly design and seamless social media integration led to higher engagement rates and increased content sharing.</p>
+                            </div>
+                            <!--<form class="contact-form full-width">
+                                <h3 class="mb-3">Have project in mind? Let's discuss</h3>
+                                <p class="mb-4 mb-xl-5 pb-2">Get in touch with us to see how we can help you with your project</p>
+                                <div class="row g-4 g-xl-5">
+                                    <div class="col-sm-6 contact-input">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="user_name" placeholder="Your name" required />
+                                    </div>
+                                    <div class="col-sm-6 contact-input">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="user_email" placeholder="Your e-mail" required />
+                                    </div>
+                                    <div class="col-12 contact-input">
+                                        <label for="service">Service</label>
+                                        <input name="service" placeholder="Your Serivice" />
+                                    </div>
+                                    <div class="col-12 contact-input">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" placeholder="Your message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="submit-btn position-relative">
+                                        <div class="waves-top-md">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        submit
+                                        <div class="waves-bottom-md">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>-->
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- end preloader -->
-
-            
-
-            <!-- start of hero -->
-            <section class="static-hero-s2">
-                <div class="hero-container">
-                    <div class="hero-inner">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
-                                <div class="col-xl-6 col-lg-6 col-12">
-                                    <div class="wpo-static-hero-inner">
-                                        <div class="slide-title-sub wow fadeInUp" data-wow-duration="1400ms">
-                                            <h3>Johnson & Aleena</h3>
-                                        </div>
-                                        <div class="slide-title wow fadeInUp" data-wow-duration="1500ms">
-                                            <h2>Save the Date</h2>
-                                        </div>
-                                        <div data-swiper-parallax="400" class="slide-text wow fadeInUp"
-                                            data-wow-duration="1600ms">
-                                            <p>We Are Getting Married May 24,2025</p>
-                                        </div>
-                                        <div class="shape-2 wow fadeInUp" data-wow-duration="1800ms"><img
-                                                src="assets/images/slider/shape2.svg" alt=""></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="static-hero-right">
-                    <div class="static-hero-img scene" id="scene">
-                        <div class="static-hero-img-inner">
-                            <img class="zoom" src="assets/images/slider/hero-1.jpg" alt="">
-                            <div class="hero-img-inner-shape">
-                                <img src="assets/images/slider/shape9.svg" alt="">
-                            </div>
-                            <div class="hero-img-inner-shape-2">
-                                <img src="assets/images/slider/shape10.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="static-hero-shape-1 wow fadeInUp" data-wow-delay=".5s">
-                            <img src="assets/images/slider/shape7.svg" alt="">
-                        </div>
-                        <div class="static-hero-shape-2 wow fadeInDown" data-wow-delay=".5s">
-                            <img src="assets/images/slider/shape8.svg" alt="">
-                        </div>
-                        <div class="inner-image-1">
-                            <span class="layer" data-depth="0.25">
-                                <img src="assets/images/slider/inner-1.jpg" alt="">
-                            </span>
-                        </div>
-                        <div class="inner-image-2">
-                            <span class="layer" data-depth="0.45">
-                                <img src="assets/images/slider/inner-2.jpg" alt="">
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="left-shape">
-                    <div class="left-shape-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177 383" fill="none">
-                            <path d="M167.726 404.933C178.762 383.436 180.815 359.362 167.119 341.847C147.887 317.271 96.7324 307.231 84.7796 280.695C77.4608 264.444 87.5548 247.29 95.5965 231.18C105.368 211.617 112.299 191.009 109.447 170.492C106.594 149.975 92.8858 129.419 67.8444 117.214C52.3548 109.662 31.5859 104.223 26.2291 91.9796C23.3377 85.3811 25.8806 78.3444 27.5715 71.5654C31.7795 54.7211 30.6307 37.2969 24.2155 20.7619C22.0211 15.1041 19.0136 9.33044 12.7016 5.2579C6.38957 1.19826 -4.06587 -0.567362 -11.3847 2.68035C-19.4392 6.25026 -20.317 13.738 -20.3944 20.1561C-20.7946 53.4581 -21.1947 86.7472 -21.5949 120.049C-22.8857 227.288 -24.1636 334.514 -23.9828 441.753C-23.9699 445.761 -23.686 450.233 -19.3489 453.017C-15.5798 455.453 -9.86154 455.853 -4.608 456.059C28.0749 457.412 81.8624 461.91 112.583 453.017C135.534 446.393 156.38 427.036 167.726 404.933Z" fill="" />
-                        </svg>
-                    </div>
-                    <div class="left-shape-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 440" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M114.534 36.9236C91.906 7.20447 50.5877 -1.63653 13.232 0.245079C-29.3255 2.38445 -85.488 15.3238 -116.39 47.4916C-140.056 72.1229 -138.743 104.88 -137.465 136.771C-137.445 137.285 -137.424 137.798 -137.404 138.312C-133.87 226.123 -137.18 314.641 -140.48 402.886C-141.808 438.405 -143.135 473.88 -144.013 509.247C-70.5793 518.256 3.70596 516.31 77.6556 514.338L113.717 513.377C128.295 512.988 142.872 512.6 157.453 512.211L158.084 512.194C232.198 510.215 306.4 508.234 380.179 500.896C385.691 500.354 391.5 499.659 395.94 496.346C400.458 492.97 402.768 487.441 404.472 482.067C422.518 425.013 386.362 356.72 328.986 339.464C311.749 334.282 293.715 333.293 275.655 332.303C260.297 331.461 244.92 330.618 229.995 327.195C177.073 315.041 134.167 267.679 127.364 213.885C124.625 192.258 127.225 170.517 129.826 148.773C130.828 140.391 131.831 132.009 132.527 123.632C135.031 93.5267 132.837 60.9722 114.534 36.9236ZM247.708 265.26C235.639 277.593 215.606 280.403 199.638 273.83C141.837 250.039 162.593 158.098 227.675 189.454C241.434 196.091 252.871 208.077 257.273 222.691C261.687 237.293 258.395 254.357 247.708 265.26Z" fill="" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="right-shapes">
-                    <div class="right-shape-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 369" fill="none">
-                            <path d="M9.41696 -35.934C-1.61934 -14.4372 -3.67169 9.63712 10.0237 27.1516C29.2565 51.7285 80.4107 61.7681 92.3635 88.304C99.6823 104.555 89.5883 121.709 81.5466 137.819C71.7753 157.382 64.8437 177.99 67.6964 198.507C70.549 219.025 84.2573 239.58 109.299 251.785C124.788 259.337 145.557 264.776 150.914 277.019C153.805 283.618 151.262 290.655 149.572 297.434C145.364 314.278 146.512 331.702 152.928 348.237C155.122 353.895 158.13 359.669 164.442 363.741C170.753 367.801 181.209 369.566 188.528 366.319C196.582 362.749 197.46 355.261 197.538 348.843C197.938 315.541 198.338 282.252 198.738 248.95C200.029 141.711 201.307 34.4847 201.126 -72.7543C201.113 -76.7624 200.829 -81.2344 196.492 -84.0182C192.723 -86.454 187.005 -86.8535 181.751 -87.0597C149.068 -88.4129 95.2807 -92.9107 64.5598 -84.0182C41.6094 -77.3939 20.7631 -58.0365 9.41696 -35.934Z" fill="" />
-                        </svg>
-                    </div>
-                    <div class="right-shape-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414 426" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M294.609 389.075C317.237 418.795 358.555 427.636 395.911 425.754C438.469 423.615 494.631 410.675 525.533 378.507C549.199 353.876 547.886 321.119 546.609 289.228C546.588 288.714 546.567 288.201 546.547 287.687C543.013 199.877 546.323 111.358 549.623 23.1129C550.951 -12.4064 552.278 -47.8813 553.156 -83.248C479.722 -92.2566 405.437 -90.3105 331.487 -88.3387L295.426 -87.3777C280.848 -86.9892 266.271 -86.6007 251.69 -86.2122L251.059 -86.1954C176.945 -84.2163 102.743 -82.2348 28.9636 -74.8968C23.4519 -74.3555 17.6434 -73.6595 13.203 -70.3474C8.68524 -66.9708 6.37469 -61.4419 4.67084 -56.0677C-13.3745 0.986389 22.7807 69.2786 80.1566 86.5353C97.3944 91.7174 115.428 92.706 133.488 93.6962C148.846 94.5381 164.223 95.3812 179.148 98.8044C232.07 110.958 274.976 158.32 281.779 212.114C284.518 233.741 281.918 255.482 279.317 277.226C278.315 285.608 277.312 293.99 276.616 302.367C274.112 332.472 276.306 365.027 294.609 389.075ZM161.435 160.739C173.504 148.406 193.537 145.596 209.505 152.169C267.306 175.96 246.55 267.901 181.469 236.545C167.709 229.908 156.272 217.922 151.871 203.308C147.456 188.706 150.748 171.642 161.435 160.739Z" fill="" />
-                        </svg>
-                    </div>
-                </div>
-            </section>
-            <!-- end of hero slider -->
-             
-            <!-- start couple-section -->
-            <section class="wpo-couple-section-s2 section-padding" id="couple">
-                <div class="container-fluid">
-                    <div class="couple-area clearfix">
-                        <div class="row align-items-center">
-                            <div class="col col-md-12 col-12">
-                                <div class="couple-item-wrap pointparallax">
-                                    <div class="couple-img-wrap">
-                                        <div class="couple-common point__item" data-position="left-top" data-point="middle"
-                                            data-path="280">
-                                            <div class="couple-img">
-                                                <img src="assets/images/couple/groom.png?v=0.001" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="couple-common point__item" data-position="right" data-point="middle"
-                                            data-path="280">
-                                            <div class="couple-img">
-                                                <img src="assets/images/couple/bride.png?v=0.001" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="couple-common couple-text-wrap">
-                                        <div class="couple-text-l-item">
-                                            <div class="couple-text-bg point__item top" data-position="center-top"
-                                                data-point="left" data-path="280">
-                                                <svg class="shape-bg" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 667 413" fill="none">
-                                                    <path
-                                                        d="M666.082 212.859C663.967 197.547 655.652 181.032 639.387 163.277C611.196 132.471 572.902 114.388 538.985 92.1488C479.066 52.8841 411.743 4.50513 339.423 0.968758C247.811 -3.51551 167.797 56.4934 90.7001 101.19C56.2727 121.096 -3.09998 147.382 0.838745 199.188C2.55282 221.646 18.016 239.801 33.1874 255.369C86.1049 309.727 143.362 364.668 211.779 395.22C305.908 437.218 403.975 392.157 491.867 353.913C542.669 331.82 677.424 294.232 666.082 212.859Z"
-                                                        fill="" />
-                                                </svg>
-                                                <div class="outer-shape">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 424"
-                                                        fill="none">
-                                                        <path
-                                                            d="M291.648 424C273.96 424 255.689 421.703 236.761 416.526C175.383 399.829 119.475 365.85 72.9029 334.825C69.4018 332.492 65.7548 330.159 62.0349 327.752C42.4872 315.211 20.3136 300.993 8.31507 280.175C-3.68345 259.395 -2.6623 234.166 11.1232 210.979C23.3406 190.49 42.3778 174.266 57.6586 161.215C75.784 145.757 92.9248 130.189 111.853 112.909C148.942 79.0397 190.992 40.65 241.83 17.9735C292.013 -4.37495 347.483 -5.94262 411.305 13.1611C440.846 22.0202 469.766 33.8324 497.738 45.2801L498.832 45.7176C511.196 50.7852 523.96 55.4517 536.323 60.0089C553.099 66.1702 570.495 72.5502 587.126 79.9511C588.949 80.7532 589.788 82.9406 588.986 84.7635C588.183 86.6228 586.031 87.4249 584.172 86.6228C567.76 79.2949 550.51 72.9877 533.807 66.8629C521.371 62.3057 508.533 57.6027 496.061 52.4986L494.967 52.0612C467.14 40.6864 438.402 28.9107 409.19 20.1609C347.082 1.56762 293.326 3.02591 244.785 24.6452C195.003 46.8113 153.428 84.7999 116.739 118.304C98.4681 135.002 80.5615 151.262 62.3632 166.756C47.4835 179.443 28.9569 195.23 17.3596 214.698C4.95986 235.515 3.93871 258.046 14.6243 276.493C25.7476 295.743 46.2071 308.867 65.9737 321.591C69.6936 323.997 73.377 326.367 76.951 328.7C123.049 359.397 178.3 393.011 238.694 409.417C337.418 436.286 418.563 382.438 497.009 330.377C507.512 323.414 518.38 316.195 529.066 309.341C533.734 306.352 538.949 303.107 544.492 299.644C596.972 266.978 684.791 212.365 655.907 146.048C651.604 136.168 644.164 126.507 633.807 117.284C632.311 115.935 632.166 113.638 633.515 112.143C634.864 110.648 637.162 110.502 638.657 111.851C649.817 121.768 657.877 132.304 662.581 143.132C693.982 215.208 602.807 271.936 548.358 305.841C542.815 309.268 537.673 312.513 533.005 315.503C522.355 322.32 511.524 329.539 501.057 336.502C436.032 379.668 369.256 424 291.648 424Z"
-                                                            fill="" />
-                                                    </svg>
-                                                </div>
-                                                <div class="couple-text">
-                                                    <h3>Johnson Benny</h3>
-                                                    <p>
-                                                        Johnson Benny is a research analyst currently owns a startup. He comes from a well-respected and loving family based in Kottayam, Kerala. His father, Mr. Benny James, is a driver, and his mother, Mrs. Saly Benny, is a homemaker.
-                                                    </p>
-                                                </div>
-                                                <div class="round-shape">
-                                                    <div class="inner"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="couple-text-r-item">
-                                            <div class="couple-text-bg point__item" data-position="left-bottom"
-                                                data-point="right-bottom" data-path="280">
-                                                <svg class="shape-bg" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 591 440" fill="none">
-                                                    <path d="M25.4114 57.986C-7.01725 96.9909 -4.11683 145.478 11.5491 183.165C41.245 254.568 93.5948 320.713 144.62 380.572C161.617 400.497 175.513 426.044 204.832 435.682C234.53 445.496 272.426 434.916 303.036 419.91C352.842 395.499 393.348 358.703 432.676 322.758C480.973 278.571 537.087 232.887 568.81 179.978C596.134 134.421 602.956 73.8999 561.072 43.6382C517.585 12.246 436.357 7.28966 376.423 4.79922C329.292 2.83538 281.155 3.3091 233.647 1.59968C173.101 -0.572324 96.6825 -2.76814 43.2131 40.5322C36.3646 46.0749 30.4711 51.9203 25.4114 57.986Z" fill="" />
-                                                </svg>
-                                                <div class="outer-shape">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566 437"
-                                                        fill="none">
-                                                        <path d="M557.035 59.4958C564.478 77.5535 567.026 97.5646 565.378 115.995C561.325 160.794 539.172 206.045 517.71 249.81C513.708 257.982 509.752 266.071 505.959 274.06C494.101 299.036 480.639 327.334 463.322 353.197C462.261 354.77 460.01 355.535 458.277 354.887C456.578 354.224 456.032 352.405 457.082 350.804C474.13 325.376 487.487 297.316 499.24 272.578C503.056 264.547 507.047 256.445 511.038 248.244C532.254 204.97 554.172 160.238 558.105 116.527C561.95 73.8902 542.395 22.4993 490.402 10.3764C484.007 8.89114 477.008 7.81724 469.578 7.18048C467.633 7.00837 466.437 5.48947 466.955 3.78303C467.474 2.07659 469.472 0.798638 471.416 0.970746C479.182 1.63142 486.563 2.74259 493.328 4.33495C525.8 11.8807 546.401 33.699 557.035 59.4958ZM454.31 1.95368C454.481 2.36976 454.548 2.82888 454.441 3.35975C454.131 5.07765 452.271 6.49336 450.28 6.503C403.629 6.94372 350.887 20.7663 305.132 33.656C281.895 40.2166 258.238 47.5348 235.391 54.6482C214.876 60.9954 193.689 67.5875 172.677 73.62C119.709 88.8668 47.1546 109.753 18.4678 160.196C14.974 166.341 12.2897 172.673 10.4736 179.036C1.7929 209.646 14.5981 236.463 26.9215 253.515C27.9218 254.855 27.2747 256.842 25.4745 257.908C23.7092 258.96 21.4641 258.75 20.4871 257.368C1.93347 231.623 -3.98022 204.335 3.3325 178.507C5.27843 171.669 8.17363 164.861 11.9246 158.252C42.2591 104.891 116.854 83.4234 171.318 67.7547C192.214 61.7375 213.378 55.1875 233.847 48.8269C256.739 41.7269 280.467 34.38 303.808 27.7763C350.143 14.7125 403.557 0.742662 451.297 0.275135C452.79 0.243502 453.898 0.955088 454.31 1.95368ZM447.756 372.042C448.122 372.93 447.954 374.005 447.173 374.976C442.011 381.323 436.561 387.366 430.986 393.007C415.342 408.801 383.364 435.451 345.034 436.518C319.384 437.226 298.563 426.824 278.411 416.764C273.029 414.082 267.948 411.536 262.75 409.2C187.275 375.084 109.112 336.721 49.1376 287.453C40.214 280.13 32.2547 272.183 25.4784 263.845C24.4547 262.547 24.9397 260.563 26.6822 259.455C28.4133 258.319 30.6703 258.46 31.7055 259.786C38.2516 267.861 45.9459 275.561 54.6159 282.664C114.06 331.534 191.807 369.678 266.97 403.631C272.272 406.021 277.654 408.703 282.839 411.304C302.217 420.969 322.23 430.99 345.981 430.319C381.115 429.304 411.036 404.281 425.736 389.459C431.148 384.016 436.424 378.142 441.423 371.992C442.635 370.486 444.93 369.93 446.524 370.733C447.147 371.06 447.539 371.515 447.756 372.042Z" fill="#" />
-                                                    </svg>
-                                                </div>
-                                                <div class="couple-text">
-                                                    <h3>Aleena Andrews</h3>
-                                                    <p>
-                                                        Aleena Andrews is a student relation officer currently working at Santamonica, Kottayam. She comes from a well-respected and loving family based in Kottayam, Kerala. His father, Mr. OJ Andrews, is a driver, and his mother, Mrs. Shiny Andrews, is a homemaker.
-                                                    </p>
-                                                </div>
-                                                <div class="round-shape">
-                                                    <div class="inner"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end container -->
-                <div class="left-shape">
-                    <img src="assets/images/couple/left.svg" alt="">
-                </div>
-                <div class="right-shape">
-                    <img src="assets/images/couple/right.svg" alt="">
-                </div>
-            </section>
-            <!-- end couple-section -->
-
-            <!-- start wpo-event-section -->
-            <section class="wpo-event-section wpo-story-section-s2 section-padding" id="event">
-                <div class="container">
-                    <div class="wpo-section-title">
-                        <span>Our Wedding</span>
-                        <h2>When & Where</h2>
-                    </div>
-                    <div class="wpo-event-wrap">
-                        <div class="row">
-                            <div class="col col-lg-6 col-md-6 col-12">
-                                <div class="wpo-event-item wow fadeInUp" data-wow-duration="1200ms">
-                                    <div class="wpo-event-img">
-                                        <div class="wpo-event-img-inner">
-                                            <img src="assets/images/event/2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="wpo-event-text">
-                                        <div class="title">
-                                            <h2>The Ceremony</h2>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                Saturday, 24 May. 2025 <br>
-                                                11:00 AM
-                                            </li>
-                                            <li>St. Mary's Forane Church Athirampuzha, Kottayam, Kerala</li>
-                                            <li> 
-                                                <a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d413.42237668414407!2d76.53796946643308!3d9.667481959777232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d49ab1452909%3A0xcc610eeed5e1f4ea!2sSt.%20Mary&#39;s%20Forane%20Church!5e0!3m2!1sen!2sin!4v1747068798140!5m2!1sen!2sin">
-                                                    See Location
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-lg-6 col-md-6 col-12">
-                                <div class="wpo-event-item wow fadeInUp" data-wow-duration="1000ms">
-                                    <div class="wpo-event-img">
-                                        <div class="wpo-event-img-inner">
-                                            <img src="assets/images/event/1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="wpo-event-text">
-                                        <div class="title">
-                                            <h2>The Reception</h2>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                Saturday, 24 May. 2025 <br>
-                                                12:45 PM
-                                            </li>
-                                            <li>St. Mary's Parish Hall Athirampuzha, Kottayam, Kerala</li>
-                                            <li> 
-                                                <a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.2918071170416!2d76.53945600289428!3d9.666989476488641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d49b2612e805%3A0x8d12434175d860cf!2sSt.%20Mary&#39;s%20Parish%20Hall%2C%20Athirampuzha!5e0!3m2!1sen!2sin!4v1747068855083!5m2!1sen!2sin">
-                                                    See Location
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> <!-- end container -->
-            </section>
-            <!-- end wpo-event-section -->
-
-            <!-- start of wpo-site-footer-section -->
-            <footer class="wpo-site-footer-s2">
-                <div class="wpo-upper-footer">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="timer">
-                                <div class="time-box"><span id="months">00</span><span class="label">Month</span></div>
-                                <div class="time-box"><span id="days">00</span><span class="label">Days</span></div>
-                                <div class="time-box"><span id="hours">00</span><span class="label">Hours</span></div>
-                                <div class="time-box"><span id="minutes">00</span><span class="label">Mins</span></div>
-                                <div class="time-box"><span id="seconds">00</span><span class="label">Secs</span></div>
-                            </div>
-                        </div>
-                    </div> <!-- end container -->
-                </div>
-                
-                <div class="ft-shape-1">
-                    <img src="assets/images/footer-shape-1.svg" alt="">
-                </div>
-                <div class="ft-shape-2">
-                    <img src="assets/images/footer-shape-2.svg" alt="">
-                </div>
-            </footer>
-            <!-- end of wpo-site-footer-section -->
-
         </div>
-        <!-- end of page-wrapper -->
-
-        <!-- All JavaScript files
-        ================================================== -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!-- Plugins for this template -->
-        <script src="assets/js/modernizr.custom.js"></script>
-        <script src="assets/js/jquery.pointparallax.min.js"></script>
-        <script src="assets/js/jquery-plugin-collection.js"></script>
-        <script src="assets/js/moving-animation.js"></script>
-        <script src="assets/js/tilt.jquery.min.js"></script>
-        <!-- Custom script for this template -->
-        <script src="assets/js/script.js"></script>
     </body>
 </html>
